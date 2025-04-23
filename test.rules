@@ -1,0 +1,80 @@
+# Google
+alert http any any -> any any (msg:"Visited Google (HTTP)"; content:"Host: google.com"; http_header; sid:1000001; rev:1;)
+alert tls any any -> any any (msg:"Visited Google (HTTPS)"; tls.sni; content:"google.com"; sid:1000021; rev:1;)
+
+# Naver
+alert http any any -> any any (msg:"Visited Naver (HTTP)"; content:"Host: naver.com"; http_header; sid:1000002; rev:1;)
+alert tls any any -> any any (msg:"Visited Naver (HTTPS)"; tls.sni; content:"naver.com"; sid:1000022; rev:1;)
+
+# YouTube
+alert http any any -> any any (msg:"Visited YouTube (HTTP)"; content:"Host: youtube.com"; http_header; sid:1000003; rev:1;)
+alert tls any any -> any any (msg:"Visited YouTube (HTTPS)"; tls.sni; content:"youtube.com"; sid:1000023; rev:1;)
+
+# Kakao
+alert http any any -> any any (msg:"Visited Kakao (HTTP)"; content:"Host: kakao.com"; http_header; sid:1000004; rev:1;)
+alert tls any any -> any any (msg:"Visited Kakao (HTTPS)"; tls.sni; content:"kakao.com"; sid:1000024; rev:1;)
+
+# Daum
+alert http any any -> any any (msg:"Visited Daum (HTTP)"; content:"Host: daum.net"; http_header; sid:1000005; rev:1;)
+alert tls any any -> any any (msg:"Visited Daum (HTTPS)"; tls.sni; content:"daum.net"; sid:1000025; rev:1;)
+
+# Facebook
+alert http any any -> any any (msg:"Visited Facebook (HTTP)"; content:"Host: facebook.com"; http_header; sid:1000006; rev:1;)
+alert tls any any -> any any (msg:"Visited Facebook (HTTPS)"; tls.sni; content:"facebook.com"; sid:1000026; rev:1;)
+
+# Instagram
+alert http any any -> any any (msg:"Visited Instagram (HTTP)"; content:"Host: instagram.com"; http_header; sid:1000007; rev:1;)
+alert tls any any -> any any (msg:"Visited Instagram (HTTPS)"; tls.sni; content:"instagram.com"; sid:1000027; rev:1;)
+
+# Twitter
+alert http any any -> any any (msg:"Visited Twitter (HTTP)"; content:"Host: twitter.com"; http_header; sid:1000008; rev:1;)
+alert tls any any -> any any (msg:"Visited Twitter (HTTPS)"; tls.sni; content:"twitter.com"; sid:1000028; rev:1;)
+
+# Netflix
+alert http any any -> any any (msg:"Visited Netflix (HTTP)"; content:"Host: netflix.com"; http_header; sid:1000009; rev:1;)
+alert tls any any -> any any (msg:"Visited Netflix (HTTPS)"; tls.sni; content:"netflix.com"; sid:1000029; rev:1;)
+
+# Amazon
+alert http any any -> any any (msg:"Visited Amazon (HTTP)"; content:"Host: amazon.com"; http_header; sid:1000010; rev:1;)
+alert tls any any -> any any (msg:"Visited Amazon (HTTPS)"; tls.sni; content:"amazon.com"; sid:1000030; rev:1;)
+
+# Coupang
+alert http any any -> any any (msg:"Visited Coupang (HTTP)"; content:"Host: coupang.com"; http_header; sid:1000011; rev:1;)
+alert tls any any -> any any (msg:"Visited Coupang (HTTPS)"; tls.sni; content:"coupang.com"; sid:1000031; rev:1;)
+
+# Wikipedia
+alert http any any -> any any (msg:"Visited Wikipedia (HTTP)"; content:"Host: wikipedia.org"; http_header; sid:1000012; rev:1;)
+alert tls any any -> any any (msg:"Visited Wikipedia (HTTPS)"; tls.sni; content:"wikipedia.org"; sid:1000032; rev:1;)
+
+# Zoom
+alert http any any -> any any (msg:"Visited Zoom (HTTP)"; content:"Host: zoom.us"; http_header; sid:1000013; rev:1;)
+alert tls any any -> any any (msg:"Visited Zoom (HTTPS)"; tls.sni; content:"zoom.us"; sid:1000033; rev:1;)
+
+# LinkedIn
+alert http any any -> any any (msg:"Visited LinkedIn (HTTP)"; content:"Host: linkedin.com"; http_header; sid:1000014; rev:1;)
+alert tls any any -> any any (msg:"Visited LinkedIn (HTTPS)"; tls.sni; content:"linkedin.com"; sid:1000034; rev:1;)
+
+# Reddit
+alert http any any -> any any (msg:"Visited Reddit (HTTP)"; content:"Host: reddit.com"; http_header; sid:1000015; rev:1;)
+alert tls any any -> any any (msg:"Visited Reddit (HTTPS)"; tls.sni; content:"reddit.com"; sid:1000035; rev:1;)
+
+# StackOverflow
+alert http any any -> any any (msg:"Visited StackOverflow (HTTP)"; content:"Host: stackoverflow.com"; http_header; sid:1000016; rev:1;)
+alert tls any any -> any any (msg:"Visited StackOverflow (HTTPS)"; tls.sni; content:"stackoverflow.com"; sid:1000036; rev:1;)
+
+# GitHub
+alert http any any -> any any (msg:"Visited GitHub (HTTP)"; content:"Host: github.com"; http_header; sid:1000017; rev:1;)
+alert tls any any -> any any (msg:"Visited GitHub (HTTPS)"; tls.sni; content:"github.com"; sid:1000037; rev:1;)
+
+# Tistory
+alert http any any -> any any (msg:"Visited Tistory (HTTP)"; content:"Host: tistory.com"; http_header; sid:1000018; rev:1;)
+alert tls any any -> any any (msg:"Visited Tistory (HTTPS)"; tls.sni; content:"tistory.com"; sid:1000038; rev:1;)
+
+# Netflix Korea
+alert http any any -> any any (msg:"Visited Netflix Korea (HTTP)"; content:"Host: netflix.co.kr"; http_header; sid:1000019; rev:1;)
+alert tls any any -> any any (msg:"Visited Netflix Korea (HTTPS)"; tls.sni; content:"netflix.co.kr"; sid:1000039; rev:1;)
+
+# Baidu
+alert http any any -> any any (msg:"Visited Baidu (HTTP)"; content:"Host: baidu.com"; http_header; sid:1000020; rev:1;)
+alert tls any any -> any any (msg:"Visited Baidu (HTTPS)"; tls.sni; content:"baidu.com"; sid:1000040; rev:1;)
+
